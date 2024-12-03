@@ -1,0 +1,220 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bballbackground">
+
+
+
+
+    <!-- Team Names -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+
+
+        <EditText
+            android:id="@+id/team1Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Team 1 Name"
+            android:padding="48dp" />
+
+
+
+
+        <EditText
+            android:id="@+id/team2Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Team 2 Name"
+            android:padding="48dp" />
+    </LinearLayout>
+
+
+
+
+    <!-- Scores -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="16dp">
+
+
+
+
+        <TextView
+            android:id="@+id/team1Score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="24sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/team2Score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+
+
+    <!-- Score Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="16dp">
+
+
+
+
+        <!-- Team 1 Score Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <Button
+                android:id="@+id/team1FreeThrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Throw (1 Point)" />
+
+
+
+
+            <Button
+                android:id="@+id/team1Layup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layup (2 Points)" />
+
+
+
+
+            <Button
+                android:id="@+id/team1ThreePointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-Point Shot (3 Points)" />
+        </LinearLayout>
+
+
+
+
+        <!-- Team 2 Score Buttons -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <Button
+                android:id="@+id/team2FreeThrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Free Throw (1 Point)" />
+
+
+
+
+            <Button
+                android:id="@+id/team2Layup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Layup (2 Points)" />
+
+
+
+
+            <Button
+                android:id="@+id/team2ThreePointer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-Point Shot (3 Points)" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="00:00"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+
+
+
+        <Button
+            android:id="@+id/startTimerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Timer"
+            android:layout_marginEnd="8dp" />
+
+
+
+
+        <Button
+            android:id="@+id/resetTimerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Timer" />
+    </LinearLayout>
+
+
+
+
+    <!-- Reset Scores -->
+    <Button
+        android:id="@+id/resetScoresButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Scores"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
